@@ -939,6 +939,12 @@ body.ie ._ibg img {
   color: rgba(54, 56, 56, 0.9033);
 }
 
+.header__link._active {
+  padding: 3px 0px;
+  border-bottom: 1px solid #363838;
+  border-radius: 1px;
+}
+
 .icon-menu {
   display: none;
 }
@@ -1892,6 +1898,10 @@ body.ie ._ibg img {
   margin-bottom: 105px;
 }
 
+.tabs-block._gallery-page {
+  margin-top: 80px;
+}
+
 .tabs-block__navigation {
   max-width: 870px;
   margin: 0 auto;
@@ -2225,6 +2235,10 @@ body.ie ._ibg img {
     margin-bottom: calc(50px + 55 * ((100vw - 320px) / 790));
   }
 
+  .tabs-block._gallery-page {
+    margin-top: calc(50px + 30 * ((100vw - 320px) / 790));
+  }
+
   .tabs-block__navigation {
     margin-bottom: calc(25px + 25 * ((100vw - 320px) / 790));
   }
@@ -2461,7 +2475,7 @@ body.ie ._ibg img {
     top: 0;
     left: 0;
     overflow: auto;
-    padding-top: 80px;
+    padding-top: 130px;
     display: block;
     list-style-type: none;
     text-align: center;
@@ -2614,6 +2628,11 @@ body.ie ._ibg img {
   .header__link:hover {
     color: rgba(54, 56, 56, 0.6033);
     text-decoration: underline;
+  }
+
+  .header__link._active:hover {
+    text-decoration: none;
+    color: rgba(54, 56, 56, 0.9033);
   }
 
   .form-contact__mail span:hover {
