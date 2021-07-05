@@ -1896,3 +1896,56 @@ let slider_about = new Swiper('.main-slider__body', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+let slider_blog = new Swiper('.slider-blog__body', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 70,
+	autoHeight: true,
+	speed: 600,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true,
+	//preloadImages: false,
+	lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.body-slider__pagination',
+	//	clickable: true,
+	//},
+	navigation: {
+		nextEl: '.slider__arrows-prev',
+		prevEl: '.slider__arrows-next',
+	},
+
+	breakpoints: {
+		320: {
+			spaceBetween: 10,
+		},
+		768: {
+			spaceBetween: 20,
+		},
+		992: {
+			spaceBetween: 20,
+		},
+		1268: {
+			spaceBetween: 30,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
