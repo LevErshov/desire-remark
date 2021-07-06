@@ -1949,3 +1949,66 @@ let slider_blog = new Swiper('.slider-blog__body', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+let slider_asdasd = new Swiper('.mini-slider__body', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 10,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 600,
+    spaceBetween: 15,
+	slidesPerGroup: 5,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true,
+	//preloadImages: false,
+	lazy: true,
+	pagination: {
+		el: '.swipe-dots',
+		clickable: true,
+	},
+	//navigation: {
+	//	nextEl: '.slider__arrows-prev',
+	//	prevEl: '.slider__arrows-next',
+	//},
+	breakpoints: {
+		310: {
+			slidesPerView: 1,
+			slidesPerGroup: 2,
+		},
+		425:{
+			slidesPerView: 2,
+		},
+		768: {
+			spaceBetween: 0,
+			slidesPerView: 3,
+		},
+		992: {
+			spaceBetween: 0,
+			slidesPerView: 4,
+		},
+		1268: {
+			spaceBetween: 15,
+			slidesPerView: 7,
+		},
+		1600:{
+			slidesPerView: 10,
+		}
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
